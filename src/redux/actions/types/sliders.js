@@ -1,0 +1,3 @@
+export const CHANGED_SIZE = "CHANGED_SIZE";
+export const CHANGED_SPEED = "CHANGED_SPEED";
+
