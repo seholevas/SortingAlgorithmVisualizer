@@ -1,11 +1,12 @@
 
 import {combineReducers} from 'redux'
 import arrayReducer from './ArrayReducer'
-import settingsReducer from './SettingsReducer'
+// import settingsReducer from './SettingsReducer'
 
 
-const combinedReducers = combineReducers({
+const combinedReducers = 
+combineReducers({
     array: arrayReducer,
-    settings: settingsReducer,
+    // settings: settingsReducer,
 });
 export default combinedReducers

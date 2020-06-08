@@ -1,21 +1,15 @@
-import * as actions from "../actions/types/buttons"
-import * as actionss from "../actions/types/sliders"
-import {generateArray} from '../../helpers/functions/GenerateArray'
-export default function reducer(state = [], action)
-{
-    if(action.type === actions.PRESSED_START)
-    {
-        return  /// state!
-        //generateArray(3,0,1)
-    }
-    else if(action.type === actions.PRESSED_SHUFFLE)
-    {
-        return ///state!
+import * as btnActions from "../actions/types/buttons"
+import * as sliderActions from "../actions/types/sliders"
+export default function reducer(state = [3, 1, 2, 3, 4, 5, 6, 5], action) {
+
+    if (action.type === btnActions.PRESSED_SHUFFLE) {
+        // return generateArray(getValue("size"))///state!
+        return action.payload.array;
     }
 
-    else if (action.type === actionss.CHANGED_SIZE)
-    {
-     return   
+    else if (action.type === sliderActions.CHANGED_SIZE) {
+        // return generateArray(getValue("size"))
+        return action.payload.array;
     }
-    return state
+    return state;
 }

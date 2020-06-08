@@ -3,7 +3,7 @@ import { BaseCTA } from "../BaseCTA";
 
 export const SelectCTA = ({
     className,
-    onChange,
+    onChange = ()=>{alert("onChange is not set!")},
     ...props,
 }) => (
         <BaseCTA tag="select" className={className} onChange={onChange}{...props}>
