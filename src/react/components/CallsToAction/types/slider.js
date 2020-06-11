@@ -4,7 +4,7 @@ import { BaseCTA } from "../BaseCTA";
 export const RangedSliderCTA = ({
     // id,
     min = "1",
-    max = "100",
+    max = "10",
     className,
     onChange,
     ...props,
