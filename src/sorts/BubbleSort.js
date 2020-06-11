@@ -2,7 +2,8 @@ import { swap } from "../helpers/functions/Swap";
 import { changedArrayOrderDispatch } from "../redux/dispatchs/ChangedOrder";
 
 async function BubbleSort(array = []) {
-    
+    let test = array.splice();
+    console.log(test)  
     let end = array.length - 1;
     for (let i = 0; i < end; i++) {
         for (let j = 0; j < end - i; j++) {
