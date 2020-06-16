@@ -1,6 +1,8 @@
 import { swap } from "../helpers/functions/Swap";
 
 function* BubbleSort(array = []) {
+    yield [...array]
+
     let end = array.length - 1;
     for (let i = 0; i < end; i++) {
 

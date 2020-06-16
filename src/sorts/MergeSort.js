@@ -1,21 +1,20 @@
 
 
-async function Merge(nums = [], start = 0, end = nums.length - 1) {
+function Merge(nums = [], start = 0, end = nums.length - 1) {
     if (start < end) {
         let middle = Math.floor((start + end) / 2);
         //merge for left side  
-        // await Merge(nums, start, middle);
+        Merge(nums, start, middle);
         // // merge for right side
-        // await Merge(nums, middle + 1, end);
+        Merge(nums, middle + 1, end);
 
-        await Promise.all([Merge(nums, start, middle), Merge(nums, middle + 1, end)])
         // sorts left and right side
-        return await Sort(nums, start, middle, end);
+        return Sort(nums, start, middle, end);
 
     }
 }
 
-async function Sort(nums = [], start, middle, end) {
+function Sort(nums = [], start, middle, end) {
 
 
     // will be the start of the left side of the array
