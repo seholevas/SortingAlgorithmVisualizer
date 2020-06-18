@@ -1,10 +1,7 @@
-import { swap } from "../helpers/functions/Swap"
-
 export default function* InsertionSort(arr = []) {
     yield arr
         for (let i=1; i < arr.length; ++i)
         {
-            console.log("i: ", i)
             let key = arr[i];
             let j = i-1;
             

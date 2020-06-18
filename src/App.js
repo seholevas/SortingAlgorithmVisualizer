@@ -5,8 +5,6 @@ import { getValue, getValueByElementId } from './helpers/functions/GetValue';
 import dispatchArrayShuffle from './redux/dispatchs/Shuffle';
 import dispatchChangedArraySize from './redux/dispatchs/Size';
 import Canvas from './react/components/Canvas/Canvas';
-// import { BubbleSort } from './sorts/BubbleSort';
-import { Merge } from './sorts/MergeSort';
 import {Sorting} from "./idk/Sorting"
 
 
@@ -27,11 +25,11 @@ class App extends Component {
         </MasterCTA>
         <MasterCTA type="button" className="test" onClick={async () => {
           if (getValueByElementId("sort") === 'bubblesort') {
-            await Sorting([200,50, 40,10]);
+            await Sorting([200,50, 40,10,5]);
           }
           else if (getValueByElementId("sort") === 'mergesort') {
             // [10, 101, 120, 100, 30, 20, 10, 400]
-            Sorting([200,100,50,40]); }
+            Sorting([200,100,50,40,5]); }
         }}>
           <h1>Start</h1>
         </MasterCTA>
