@@ -11,7 +11,7 @@ export default function* InsertionSort(arr = []) {
             while (j>=0 && arr[j] > key)
             {
                 arr[j+1] = arr[j];
-                j = j-1;
+                j = j--;
             }
             arr[j+1] = key;
             yield [...arr]

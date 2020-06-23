@@ -15,7 +15,7 @@ function* heapify(array =[], n=0, i= 0)
         smallest = r;
     }
 
-    if(smallest != i)
+    if(smallest !== i)
     {
         console.log("swapped from heapify: ", [...array])
         yield swap([...array],i, smallest);

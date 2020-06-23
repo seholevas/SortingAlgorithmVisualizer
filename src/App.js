@@ -23,13 +23,14 @@ class App extends Component {
         <MasterCTA type="button" className="test" onClick={() => { console.log("change") }}>
           <h1>Stop</h1>
         </MasterCTA>
-        <MasterCTA type="button" className="test" onClick={async () => {
-          if (getValueByElementId("sort") === 'bubblesort') {
-            await Sorting([200,50, 40,10,5]);
-          }
-          else if (getValueByElementId("sort") === 'mergesort') {
-            // [10, 101, 120, 100, 30, 20, 10, 400]
-            Sorting([200,100,50,40,5]); }
+        <MasterCTA type="button" id="sort" className="test" onClick={async () => {
+          Sorting([200,100,50,40,35], getValueByElementId("sort"));
+          // if (getValueByElementId("sort") === 'bubblesort') {
+          //   await Sorting([200,50, 40,10,5]);
+          // }
+          // else if (getValueByElementId("sort") === 'mergesort') {
+          //   // [10, 101, 120, 100, 30, 20, 10, 400]
+          //   Sorting([200,100,50,40,5]); }
         }}>
           <h1>Start</h1>
         </MasterCTA>
