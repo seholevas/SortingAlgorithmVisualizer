@@ -1,5 +1,6 @@
 import React from 'react'
 import { BaseCTA } from "../BaseCTA";
+import "../../../../ui-kit/custom/sliders.css"
 
 export const RangedSliderCTA = ({
     // id,

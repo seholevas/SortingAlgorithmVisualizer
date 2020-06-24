@@ -21,7 +21,7 @@ class App extends Component {
         <Canvas></Canvas>
         <MasterCTA type="select" id="sort" onChange={() => { dispatchArrayShuffle(); }}></MasterCTA>
         <MasterCTA type="button" className="test" onClick={() => { console.log("change") }}>
-          <h1>Stop</h1>
+          Stop
         </MasterCTA>
         <MasterCTA type="button" id="sort" className="test" onClick={async () => {
           Sorting([200,100,50,40,35], getValueByElementId("sort"));
@@ -32,10 +32,10 @@ class App extends Component {
           //   // [10, 101, 120, 100, 30, 20, 10, 400]
           //   Sorting([200,100,50,40,5]); }
         }}>
-          <h1>Start</h1>
+          Start
         </MasterCTA>
         <MasterCTA type="button" className="test" onClick={() => { dispatchArrayShuffle(); }}>
-          <h1>Shuffle</h1>
+          Shuffle
         </MasterCTA>
 
         <MasterCTA type="slider" id="size" className="slider" onChange={() => { dispatchChangedArraySize() }}></MasterCTA>
