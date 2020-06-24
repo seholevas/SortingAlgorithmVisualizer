@@ -24,13 +24,7 @@ class App extends Component {
           Stop
         </MasterCTA>
         <MasterCTA type="button" id="sort" className="test" onClick={async () => {
-          Sorting([200,100,50,40,35], getValueByElementId("sort"));
-          // if (getValueByElementId("sort") === 'bubblesort') {
-          //   await Sorting([200,50, 40,10,5]);
-          // }
-          // else if (getValueByElementId("sort") === 'mergesort') {
-          //   // [10, 101, 120, 100, 30, 20, 10, 400]
-          //   Sorting([200,100,50,40,5]); }
+          Sorting([200,100,50,40,35,23,22,34,35,545,232,222,223,213,111,121], getValueByElementId("sort"));
         }}>
           Start
         </MasterCTA>

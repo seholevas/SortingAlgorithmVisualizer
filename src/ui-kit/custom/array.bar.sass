@@ -1,0 +1,20 @@
+$primary-color: #E1332D
+
+:root
+    --array-bar-color: lighten($primary-color, 3%)
+    --array-bar-height: 0
+.array-bar
+    background: lighten($primary-color, 3%)
+    border-radius: 30px 30px 0 0
+    transition-property: width
+    transition-duration: 2s
+    transition-timing-function: linear
+    transition-delay: 1s
+    p
+        margin: 0 auto
+        padding: 0
+        color: $primary-color
+    // background: #00000000
+
+    .selected
+        background: lighten($primary-color, 1%)
