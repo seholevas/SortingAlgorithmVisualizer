@@ -17,9 +17,9 @@ class App extends Component {
 
       <div className="app">
         <Canvas></Canvas>
-        <Select/>
+        {/* <Select/>
         <Buttons/>
-        <Sliders/>
+        <Sliders/> */}
       </div>
     );
   }
