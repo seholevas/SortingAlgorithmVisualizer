@@ -6,6 +6,7 @@
   width: 100vw;
 }
 .app .controls {
+  align-self: start;
   justify-self: start;
   background-color: #FFFF;
   height: 30vh;
