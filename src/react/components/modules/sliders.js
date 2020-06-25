@@ -8,7 +8,7 @@ import "../../../ui-kit/custom/flex.css"
 export default class Sliders extends Component {
     render() {
         return (
-            <div class="flex vertical center">
+            <div class="flex">
              
                     <MasterCTA type="slider" id="size" className="slider" onChange={() => { dispatchChangedArraySize() }}></MasterCTA>
                 {/* </div>

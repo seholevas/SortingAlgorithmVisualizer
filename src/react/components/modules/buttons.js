@@ -8,7 +8,7 @@ import "../../../ui-kit/custom/flex.css"
 export default class Buttons extends Component {
     render() {
         return (
-            <div class="flex horizontal center space-between">
+            <div class="flex">
                 <MasterCTA type="button" className="btn-stop" onClick={() => { console.log("change") }}>
                     Stop
         </MasterCTA>
