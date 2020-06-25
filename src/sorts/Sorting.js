@@ -35,9 +35,7 @@ function getSort(array = [], type = "mergesort") {
 
 async function Sorting() {
     const array = await store.getState().array
-    console.log(store.getState())
     let playing = await store.getState().settings
-    console.log("is playing: ", playing)
 
     if (playing) {
         return
@@ -46,7 +44,6 @@ async function Sorting() {
     dispatchSortStarted()
     playing = await store.getState().settings
 
-    console.log("after start dispatch: ", store.getState())
 
     const sortingType = getValueByElementId("sort");
     const generator = getSort(array, sortingType);
@@ -54,18 +51,15 @@ async function Sorting() {
     let result = generator.next();
 
     while (!result.done && playing) {
+
         let value = result.value
         console.log("value: ", value)
         dispatchChangedArrayOrder(value);
         result = generator.next();
         await sleep(1000 / getValueByElementId("speed"));
         playing = await store.getState().settings
-        console.log("in loop: ", store.getState())
-
     }
     dispatchSortStopped()
-    console.log(store.getState())
-
     console.log("done")
 
 }

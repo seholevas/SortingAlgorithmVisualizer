@@ -1,19 +1,21 @@
-export default function* InsertionSort(arr = []) {
-    yield arr
-        for (let i=1; i < arr.length; ++i)
-        {
-            let key = arr[i];
-            let j = i-1;
-            
-            /* Move elements of arr[0..i-1], that are
-            greater than key, to one position ahead
-            of their current position */
-            while (j>=0 && arr[j] > key)
-            {
-                arr[j+1] = arr[j];
-                j = j--;
+import { swap } from "../helpers/functions/Swap";
+
+export default function* InsertionSort(array = []) {
+    yield [...array]
+
+    for (var i = 1; i < array.length; i++) {
+        // console.log("[i] in first loop:", i);
+        for (var j = i; j > 0; j--) {
+            // console.log("[j] in second loop ", j)
+            // console.log("[j-1] in second loop ", j - 1)
+
+            if (array[j] < array[j - 1]) {
+                // console.log("swapping [j-1] and [j]", array[j - 1], array[j])
+                array = swap([...array], j, j - 1);
+                yield array
             }
-            arr[j+1] = key;
-            yield [...arr]
         }
+    }
+    return [...array]
+
 }
