@@ -5,7 +5,7 @@ import "../../../../ui-kit/custom/slider.css"
 export const RangedSliderCTA = ({
     // id,
     min = "1",
-    max = "10",
+    max = "150",
     className,
     onChange,
     ...props,

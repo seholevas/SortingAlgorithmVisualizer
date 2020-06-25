@@ -1,8 +1,11 @@
-.canvas
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    
+.canvas {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: strech;
+  align-items: end;
+  align-content: stretch;
+  height: 50vh;
+  width: 100vw;
 }
+
+/*# sourceMappingURL=canvas.css.map */
