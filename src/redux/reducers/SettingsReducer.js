@@ -1,18 +1,14 @@
-import * as sliderActions from "../actions/types/sliders"
-import * as dropdownActions from "../actions/types/sortlist"
-// import {generateArray} from '../../helpers/generate.array'
-export default function reducer(state = 3, action)
+import * as btnActions from "../actions/types/buttons"
+
+export default function reducer(state = false, action)
 {
-    if(action.type === dropdownActions)
+    if(action.type === btnActions.PRESSED_START)
     {
-        // alert(state)
-        return  state
+        return  action.payload.isStarted
     }
-    else if(action.type === sliderActions.CHANGED_SPEED)
+    else if(action.type === btnActions.PRESSED_STOP)
     {
-        // alert(action.payload.array)
-        // console.log(action.payload.array)
-        return state
+        return  action.payload.isStarted
     }
     return state
 }

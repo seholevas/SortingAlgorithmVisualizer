@@ -1,40 +1,19 @@
 import * as btnActions from "./types/buttons"
-import * as sliderActions from "./types/sliders"
-import * as dropdownActions from "./types/sortlist"
-// export function pressedStart(sortingAlgorithmName, speedValue)
-// {
-//     return {
-//         type: btnActions.PRESSED_START,
-//         payload: {
-//             // sort: sort,
-//             sort: sortingAlgorithmName,
-//             speed: speedValue,
-//         }
-//     }
-// }
 
-// export function changedSpeed(speedValue)
-// {
-//     return{
-//         type: sliderActions.CHANGED_SPEED,
-//         payload:{
-//             sort,
-//             speed: speedValue
+export function pressedStop() {
+    return {
+        type: btnActions.PRESSED_STOP,
+        payload: {
+            isStarted: false
+        }
+    }
+}
 
-//         }
-//     }
-// }
-
-// export function changedSort(sortingAlgorithmName)
-// {
-//     return{
-//         type: dropdownActions.CHANGED_SORT,
-//         payload:{
-//             sort: sortingAlgorithmName,
-//             speed
-
-//         }
-//     }
-// }
-
-// export function 
+export function pressedStart() {
+    return {
+        type: btnActions.PRESSED_START,
+        payload: {
+            isStarted: true
+        }
+    }
+}

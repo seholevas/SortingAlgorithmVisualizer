@@ -14,16 +14,16 @@ class App extends Component {
   render() {
 
     return (
-      <body>
+      <div>
         <div className="app">
           <Canvas></Canvas>
-          <div class="controls">
+          <div className="controls">
             <Select />
             <Buttons />
             <Sliders />
           </div>
         </div>
-        </body>
+        </div>
     );
   }
 }

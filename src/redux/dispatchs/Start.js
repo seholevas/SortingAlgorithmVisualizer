@@ -1,8 +1,6 @@
 import store from "../stores/store";
+import {pressedStart } from "../actions/SettingsActionCreator";
 
-export default function dispatch() {
-
-    store.dispatch();
-
-
+export default function dispatchSortStarted() {
+    store.dispatch(pressedStart());
 }

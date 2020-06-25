@@ -8,8 +8,9 @@ export const SelectCTA = ({
     ...props,
 }) => (
         <BaseCTA tag="select" className={className + " choicebox"} onChange={onChange}{...props}>
-            <option value="mergesort">MergeSort</option>
-            <option value="selectionsort">SelectionSort</option>
-            <option value="bubblesort">BubbleSort</option>
+            {/* <option value="mergesort">MergeSort</option> */}
+            <option value="bubblesort">Bubble Sort</option>
+            <option value="insertionsort">Insertion Sort</option>
+            <option value="selectionsort">Selection Sort</option>
         </BaseCTA>
     )
