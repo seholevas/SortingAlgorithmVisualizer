@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import * as buttons from "../CallsToAction/types/button"
-import * as sliders from "../CallsToAction/types/slider"
+import * as buttons from "../cta/types/button"
+import * as sliders from "../cta/types/slider"
 import { SelectCTA } from './types/select'
 
 const components = {

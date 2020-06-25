@@ -1,6 +1,6 @@
 import React from 'react'
-import { getArraySelector } from '../../../redux/selectors/StateSelectors';
-import "../../../ui-kit/custom/array.bar.css"
+import { getArraySelector } from '../../../../redux/selectors/StateSelectors';
+import "../../../../ui-kit/custom/array.bar.css"
 // export default class ArrayBar extends Component {
 //     componentDidUpdate () {
         
@@ -20,7 +20,7 @@ import "../../../ui-kit/custom/array.bar.css"
     // const arraySelector = useSelector(state => state.array);
     const selector = getArraySelector();
     return selector.map((val, idx) =>
-    <div className="array-bar" key={idx} style={{height: `${val}px`}}>
+    <div className="array-bar" key={idx} style={{height: `${val}vh`}}>
     <p>{val}</p>
     </div>
     );
