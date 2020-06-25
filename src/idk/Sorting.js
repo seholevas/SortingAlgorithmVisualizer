@@ -7,6 +7,7 @@ import QuickSort from "../sorts/QuickSort";
 import InsertionSort from "../sorts/InsertionSort"
 import heapSort from "../sorts/HeapSort"
 import { getValueByElementId } from "../helpers/functions/GetValue";
+import store from "../redux/stores/store";
 
 function getSort(array =[], type = "mergesort")
 {
@@ -37,9 +38,11 @@ function getSort(array =[], type = "mergesort")
 }
 
 
-async function Sorting(array = []) {
+async function Sorting() {
+    const test = await store.getState().array
+    console.log("test: ", test)
     const sortingType = getValueByElementId("sort");
-    const generator = getSort(array, sortingType);
+    const generator = getSort(test, sortingType);
     
     let result = generator.next();
 

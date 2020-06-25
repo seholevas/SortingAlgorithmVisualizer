@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { getValueByElementId } from '../../../helpers/functions/GetValue'
 import MasterCTA from '../cta/MasterCTA'
 import dispatchChangedArraySize from "../../../redux/dispatchs/Size"
-import "../../../ui-kit/custom/flexbox.css"
+// import "../../../ui-kit/custom/flexbox.css"
 
 
 export default class Sliders extends Component {
