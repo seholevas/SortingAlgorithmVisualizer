@@ -28,7 +28,11 @@ function getSort(array = [], type = "mergesort") {
         return InsertionSort(array);
     }
     else if (type === "quicksort") {
-        return QuickSort(array);
+        return QuickSort(array, 0, array.length-1);
+    }
+    else if(type === "cocktailsort")
+    {
+
     }
 }
 
