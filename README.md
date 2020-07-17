@@ -1,4 +1,4 @@
-red_circle Live Demo: https://seholevas.github.io/SortingAlgorithmVisualizer/
+🔴 Live Demo: https://seholevas.github.io/SortingAlgorithmVisualizer/
 
 Project Name: Sorting Algorithm Visualizer
 
